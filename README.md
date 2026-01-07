@@ -1,6 +1,6 @@
 # BERT-PolyLang
 A BERT based chemical language model to learn polymer representations.
-This repo serves as a code release to my master's project advised by Dr Tarak kumar Patra. \\
+This repo serves as a code release to my master's project advised by Dr Tarak kumar Patra.
 Affliations: Patra Research Group, IIT Madras
 
 ## Overview 
