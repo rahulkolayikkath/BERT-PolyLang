@@ -6,6 +6,9 @@ Affliations: Patra Research Group, IIT Madras
 ## Overview 
 The workflow consist of training a tokenizer first and using the tokenizer for training the language model.
 
+### Data 
+Data folder only has sample data of around 7k polymer SMILES(psmiles). More data: A data set of 100 million hypothetical polymers with 29 predicted properties is available for academic use at [Link](https://zenodo.org/records/7766806)
+
 ### Training of the tokenizer 
 We explored two paths to train the tokeniser 
 1) Implement BPE from Scratch adapting to Psmile strings
@@ -16,7 +19,10 @@ We trained the HF Tokenizer model BPE with custom special tokens which include f
 ### Testing the tokenizer
 Use test_tokenizer.py script to test the tokeniser model
 
+### Model training 
+We are only going to use Masked Language Modelling and not Next sentence prediction as NSP doesn't relate to pSMILES context. The implementation of encoder of transformer is adapted from Andrej Karpathy's [minGPT](https://github.com/karpathy/minGPT)
 
+We used Distributed Data Parallel Strategy in PyTorch Lightning for traning on 4 A6000 GPUs.
 
 ## Read More
 1) [Language Moodelling for learning robust polymer representations](https://rahulkolayikkath.github.io/personal-website/CH19B022_Mtech_Thesis.pdf), Masters Thesis:Rahul Krishna K, IITM(2024)
