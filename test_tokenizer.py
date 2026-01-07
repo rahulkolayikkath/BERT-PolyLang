@@ -3,6 +3,7 @@ from tokenizer import BasicTokenizer,RegexTokenizer
 
 #t = BasicTokenizer()
 t = RegexTokenizer()
+#load your trained tokenizer model
 t.load("tokenizer_models/regexTest7k.model")
 
 text = 'COc1ccc2nc(S(=O)Cc3ncc(C)c(OC)c3C)[nH]c2c'

@@ -10,11 +10,11 @@ The workflow consist of training a tokenizer first and using the tokenizer for t
 We explored two paths to train the tokeniser 
 1) Implement BPE from Scratch adapting to Psmile strings
 Tokeniser is trained using Byte Pair Encoding inspired from Andrej Karpathy's [minbpe](https://github.com/karpathy/minbpe)
-2) Train tokeniser using Hugging Face Tokenizer
+2) Train tokeniser using Hugging Face [Tokenizer](https://pypi.org/project/tokenizers/)
 We trained the HF Tokenizer model BPE with custom special tokens which include fucntional groups, elements and ions present in psmiles
 
 ### Testing the tokenizer
-
+Use test_tokenizer.py script to test the tokeniser model
 
 
 
